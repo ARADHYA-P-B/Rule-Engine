@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/rules'; // Update the base URL as needed
+const API_URL = 'https://rule-engine-server.onrender.com'; // Update the base URL as needed
 
 
 export const fetchRules = async () => {
