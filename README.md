@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+## Rule Engine with React and Material UI
+A rule-based engine built with React for managing and applying business rules dynamically. The project uses Material UI for the user interface, providing an intuitive and responsive design for defining, editing, and managing rules.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -46,3 +50,26 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/rule-engine.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd rule-engine
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+5. The app will be available at `http://localhost:3000`.
