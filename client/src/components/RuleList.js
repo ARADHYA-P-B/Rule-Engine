@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, ListItem, ListItemText, Typography,Button } from '@mui/material';
+import { List, ListItem, Typography,Button } from '@mui/material';
 
 const RuleList = ({ rules,onEditClick }) => {
   return (
