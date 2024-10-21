@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Typography} from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import RuleList from './components/RuleList';
 import EligibilityResult from './components/EligibilityResult';
 import ASTVisualizer from './components/ASTVisualizer';
@@ -43,21 +43,6 @@ const App = () => {
         setCurrentRule(rule); 
     };
 
-
-
-    const updateRule = async (id, updatedRule) => {
-        const response = await fetch(`/api/rules/${id}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(updatedRule),
-        });
-
-        const data = await response.json();
-        setRules(rules.map((rule) => (rule._id === id ? data : rule)));
-        setCurrentRule(null); 
-    };
 
 
     const handleAddRule = async (newRule) => {
@@ -116,29 +101,6 @@ const App = () => {
             console.error('Error saving rule:', error);
         }
     };
-
-
-    const addRule = async (newRule) => {
-        const response = await fetch('/api/rules', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(newRule),
-        });
-
-        const data = await response.json();
-        setRules([...rules, data]);
-    };
-
-
-
-      
-    const handleEditRule = (rule) => {
-        setCurrentRule(rule);  
-    };
-
-    
 
     const determineEligibility = (rules, userAttributes) => {
 
