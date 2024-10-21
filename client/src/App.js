@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Typography, Button } from '@mui/material';
+import { Container, Typography} from '@mui/material';
 import RuleList from './components/RuleList';
 import EligibilityResult from './components/EligibilityResult';
 import ASTVisualizer from './components/ASTVisualizer';
