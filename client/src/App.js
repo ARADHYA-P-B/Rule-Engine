@@ -37,7 +37,7 @@ const App = () => {
 
     useEffect(() => {
         fetchRules();
-    }, []);
+    });
 
     const handleEditClick = (rule) => {
         setCurrentRule(rule); 
