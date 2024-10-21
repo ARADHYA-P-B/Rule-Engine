@@ -51,7 +51,7 @@ const App = () => {
             let response;
             if (currentRule) {
                 // Update the rule if it's being edited
-                response = await fetch(`/api/rules/${currentRule._id}`, {
+                response = await fetch(`https://rule-engine-server.onrender.com/${currentRule._id}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ const App = () => {
                 
             } else {
                 // Create a new rule
-                response = await fetch('/api/rules', {
+                response = await fetch('https://rule-engine-server.onrender.com', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
